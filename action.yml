@@ -1,0 +1,14 @@
+name: PHING
+description: Run PHING
+
+inputs:
+  args:
+    description: |
+      Arguments to be passed to the phing
+    required: true
+
+runs:
+  using: docker
+  image: elnebuloso/phing:4
+  args:
+    - ${{ inputs.args }}
