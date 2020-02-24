@@ -11,5 +11,4 @@ runs:
   using: docker
   image: docker://elnebuloso/phing:4
   args:
-    - phing
-    - ${{ inputs.args }}
+    - phing ${{ inputs.args }}
