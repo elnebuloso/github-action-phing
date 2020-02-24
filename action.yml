@@ -9,6 +9,6 @@ inputs:
 
 runs:
   using: docker
-  image: elnebuloso/phing:4
+  image: docker://elnebuloso/phing:4
   args:
     - ${{ inputs.args }}
