@@ -4,11 +4,11 @@ description: Run PHING
 inputs:
   args:
     description: |
-      Arguments to be passed to the phing
+      Targets and Arguments to be passed to PHING
     required: true
 
 runs:
   using: docker
   image: docker://elnebuloso/phing:4
   args:
-    - ${{ inputs.args }}
+    - phing ${{ inputs.args }}
